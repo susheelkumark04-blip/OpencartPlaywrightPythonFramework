@@ -6,6 +6,7 @@ from Pages.home_page import HomePage
 from Pages.search_result_page import SearchResultPage
 from config import Config
 
+@pytest.mark.sanity
 def test_search_result_page(page):
     product_name = Config.product_name
     home_page = HomePage(page)

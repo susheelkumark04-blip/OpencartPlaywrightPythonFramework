@@ -38,7 +38,7 @@ class LoginPage:
 
     def login_error_msg(self):
         try:
-            return self.txt_error_msg.text
+            return self.txt_error_msg
         except Exception as e:
-            print(f" Exception while entering error message: {e}")
+            print(f" Exception while fetching login error message: {e}")
             return None

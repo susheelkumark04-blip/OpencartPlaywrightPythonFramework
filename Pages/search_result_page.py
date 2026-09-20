@@ -25,12 +25,10 @@ class SearchResultPage:
                 product = self.product_list.nth(i)
                 title = product.text_content()
                 if title and title.strip() == product_name:
-                    product.click()
-                    return ProductPage(self.page)
-            print(f"Product not found: {product_name}")
+                    return product
         except Exception as e:
             print(f"Error: {e}")
-            return None
+        return None
 
 
 
